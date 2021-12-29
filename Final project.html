@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cats 😺</title>
+    <style>
+      
+      body{
+        background: linear-gradient(177.9deg, rgb(58, 62, 88) 3.6%, rgb(119, 127, 148) 105.8%);
+        max-width: 80%;
+        display: block;
+        margin: 0 auto;
+      }
+      h1{
+        text-align: center;
+        text-shadow: 2px 2px rgb(0, 0, 0, 0.25);
+        color: #eeeeee;
+        font-size: 55px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin: 0 auto;
+        padding: 40px 0px 0px 0px;
+      }
+      h2{
+        text-align: center;
+        text-shadow: 2px 2px rgb(0, 0, 0, 0.25);
+        color: #eeeeee;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 35px;
+        margin: 0 auto;
+        padding: 0px 0px 50px 0px;
+      }
+      img{
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 25px;
+        box-shadow: rgba(0, 0, 0, 0.1 ) 0px 8px 8px 0;
+      }
+      p{
+        text-align: center;
+        text-shadow: 1px 1px rgb(0, 0, 0, 0.2);
+        color: #eeeeee;
+        font-size: 25px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        line-height: 30px;
+        padding: 25px;
+      
+      }
+      div{
+        text-align: center;
+        text-shadow: 1px 1px rgb(0, 0, 0, 0.2);
+        color: #eeeeee;
+        font-size: 25px;
+        font-family:monospace;
+        line-height: 30px;
+        padding: 40px 50px 40px 50px;
+      }
+      span{
+      text-decoration: underline;
+      font-weight: bold;
+      }
+      button{
+        background-color: #3D415B;
+        color: #fff;
+        font-size: 35px;
+        font-family:monospace;
+        font-weight: bold ;
+        border: 3px solid #3D415B;
+        border-radius: 30px;
+        display: block;
+        margin: 0 auto;
+        padding: 25px 35px;
+        transition: all 250ms ease;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px 0px;
+        cursor: pointer;
+      }
+      button:hover{
+        background-color: #fff;
+        color: #3D415B;
+      }
+      
+    .info{
+      color: #fff;
+    }
+    .link{
+      color: #fff;
+    }
+    .footer{
+      text-shadow:0px 0px;
+       color: #3D415B;
+       font-family: monospace;
+    }
+
+
+    </style>
+  </head>
+  <body>
+      
+    <h1>I love cats!</h1>
+    <h2>Regardless of breed or color! 😸</h2>
+
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/017/511/original/bl_4waystomakeyournewcatfeelathome-ts-576588316.png?1632240553"
+      alt="cat sleeping"
+    />
+      <div>
+      Cats were first domesticated in the Near East around 7500 BC.
+   </br>
+      Domestic cats come in all sizes, shapes, coat lengths, and color patterns.
+      You will find all the solid colors, plus combinations of all of
+      them—purebred or not. <span>Domestic cats, no matter their breed, are all members of one species.</span>
+    
+    </br>
+      Domestic cats come with many descriptive names. They also are called
+      "house cats," "alley cats," "moggies", and in cat shows that
+      allow them, these domestic, mixed-breed cats are usually in a class called
+      "Household Pets."
+      </div>
+    
+    <button>Please click here!</button>
+
+    <p class="info">
+      If you want to learn more about cats
+      <a href="https://en.wikipedia.org/wiki/Cat" class="link">Click here!</a>
+    </p>
+
+    <hr>
+
+    <p class="footer">
+      <em> Coded by <strong>Joana Torres</strong> </em>
+    </p>
+
+    <script>
+    
+    function catLove() {
+      let catLove = prompt("Do you like cats? (Yes/No)");
+      catLove = catLove.toLowerCase();
+      if (catLove === "yes") {
+        alert("Hurray!😽");
+      }else {
+        alert(
+          "OH!😿");
+      }
+    }
+    let catButton = document.querySelector("button");
+    catButton.addEventListener("click", catLove);
+    
+    </script>
+  </body>
+</html>
